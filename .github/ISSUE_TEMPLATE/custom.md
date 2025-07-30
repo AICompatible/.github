@@ -5,15 +5,17 @@ title: ''
 labels: ''
 assignees: emilbowry
 body:
-- type: checkboxes
-  id: cat-preferences
+- type: dropdown
+  id: download
   attributes:
-    label: What kinds of cats do you like?
-    description: You may select more than one.
+    label: How did you download the software?
     options:
-      - label: Orange cat (required. Everyone likes orange cats.)
-      - required: true
-      - label: **Black cat**
+      - Homebrew
+      - MacPorts
+      - apt-get
+      - Built from source
+  validations:
+    required: true
   
 ---
 
